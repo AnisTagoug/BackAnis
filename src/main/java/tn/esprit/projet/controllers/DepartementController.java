@@ -39,7 +39,8 @@ public class DepartementController {
 
     @DeleteMapping("/{idDepart}")
     public void removedep( @PathVariable Integer idDepart) {
-        iDepartementService.removeDepart(idDepart);
+        iDepartementService.removeDepart(
+                idDepart);
     }
 
     @GetMapping(value = "/departments/{idUniversite}")
